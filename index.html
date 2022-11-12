@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aniversário</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <p class="title">🥳Folder de aniversário</p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+            <label for="sexo">Sexo</label>
+            <div class="radio-groups">
+                <input type="radio" name="sexo" value="F" checked>
+                <label for="F">Feminino</label>
+                <input type="radio" name="sexo" value="M">
+                <label for="M">Masculino</label>
+            </div>
+            <label for="image">Foto do aniversariante</label>
+            <input type="file" id="file">
+
+            <button id="submit" class="submit">Criar imagem</button>
+        </div>
+
+        <div id="img" class="img">
+            <h1 id="congrats">Parabens</h1>
+            <h1 id="nomeTitulo"></h1>
+            <h1 id="hojeDia">Hoje é seu dia!</h1>
+            <div class="polaroid">
+                <div class="bottom">
+                </div>
+            </div>
+            <img src="" class="foto" id="imgBackground" > 
+            <div class="filterColor"></div>
+            <img src="" class="background"  id="imgPhoto" > 
+        </div>
+        <button id="download" class="download">Baixar</button>
+    </div>
+    
+    <a id="href" href="" download style="display: none">Baixar</a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

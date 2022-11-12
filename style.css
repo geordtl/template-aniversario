@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700;800&display=swap');
+@font-face {
+    src: url(MoonTime-Regular.ttf);
+    font-family: 'MoonTime-Regular';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(251, 143, 255);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.form .radio-groups input {
+    width: 200px;
+}
+
+.polaroid {
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+    width: 170px;
+    margin-top: 73px;
+    margin-left: 60px;
+    background-color: transparent;
+    border: 15px solid white;
+}
+
+.polaroid .bottom {
+    position: absolute;
+    z-index: 2;
+    height: 30px;
+    width: 170px;
+    margin-top: 185px;
+    top: auto;
+    background-color: white;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+
+#congrats {
+    z-index: 3;
+    margin-top: 17px;
+    padding-bottom: 15px;
+    font-weight: normal;
+    font-size: 45px;
+    font-family: 'MoonTime-Regular';
+    background-color: transparent;
+    transform: rotate(-5deg);
+}
+
+#nomeTitulo {
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    z-index: 4;
+    color: white;
+    margin-top: 301px;
+    text-align: center;
+    font-size: 20px;
+    height: 15px;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+.download {
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(0, 107, 92)
+}
+
+#hojeDia {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 120px;
+    z-index: 3;
+    margin-top: 337px;
+    height: 13px;
+    font-size: 16px;
+    padding-bottom: 15px;
+    margin-left: 95px;
+}
+
+.form .submit {
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(25, 171, 255);
+}
+
+.form label {
+    margin-top: 10px;
+}
+
+.form .title {
+    font-size: 22px;
+    text-align: center;
+}
+
+.form input {
+    outline: none;
+    border: none;
+    width: 230px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+#file {
+    width: 300px;
+}
+.foto {
+    position: absolute;
+    z-index: 1;
+    max-width: 200px;
+    margin-left: 60px;
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterColor {
+    position: absolute;
+    z-index: 1;
+    background-color: blue;
+    max-width: 340px;
+    height: 400px;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    filter: blur(8px);
+    max-width: 340px;
+    height: 400px;
+}
+
+.img {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 130px;
+    background-color: rgb(255, 22, 181);
+    color: white;
+    position: absolute;
+    z-index: 2;
+    margin-top: 240px;
+    margin-left: 85px;
+}
